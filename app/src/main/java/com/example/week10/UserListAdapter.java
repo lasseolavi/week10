@@ -1,7 +1,6 @@
 package com.example.week10;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -11,18 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 
 public class UserListAdapter extends RecyclerView.Adapter<UserViewHolder> {
     private Context context;
     private ArrayList<User> users;
-    //private DegreeListAdapter degreeListAdapter;
 
 
     public UserListAdapter(Context context, ArrayList<User> users) {
         this.context = context;
         this.users = users;
-        //degreeListAdapter = new DegreeListAdapter(new ArrayList<String>(), context);
     }
 
     @NonNull
@@ -59,8 +55,6 @@ public class UserListAdapter extends RecyclerView.Adapter<UserViewHolder> {
                 break;
         }
         holder.bind(users.get(position));
-        //holder.getDegreeListAdapter().setDegrees(users.get(position).getDegrees());
-        //holder.getDegreeListAdapter().notifyDataSetChanged();
 
     }
 

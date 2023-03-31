@@ -2,7 +2,6 @@ package com.example.week10;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,9 +13,7 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+
 
 public class UserActivity extends AppCompatActivity {
     private EditText firstNameET;
@@ -52,10 +49,10 @@ public class UserActivity extends AppCompatActivity {
         avatarSpinner.setAdapter(adapter);
 
 
-        CheckBox kandiCB = findViewById(R.id.kandidaatinTutkintoCheckBox);
-        CheckBox diCB = findViewById(R.id.diTutkintoCheckBox);
-        CheckBox tekniikanCB = findViewById(R.id.tekniikanTohtoriTutkintoCheckBox);
-        CheckBox uimaCB = findViewById(R.id.uimamestariCheckBox);
+        kandiCB = findViewById(R.id.kandidaatinTutkintoCheckBox);
+        diCB = findViewById(R.id.diTutkintoCheckBox);
+        tekniikanCB = findViewById(R.id.tekniikanTohtoriTutkintoCheckBox);
+        uimaCB = findViewById(R.id.uimamestariCheckBox);
 
         kandiCB.setOnCheckedChangeListener(this::onCheckedChanged);
         diCB.setOnCheckedChangeListener(this::onCheckedChanged);

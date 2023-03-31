@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = MainActivity.this;
-
-        UserStorage userStorage = UserStorage.getInstance().loadUsers(context);
+        UserStorage.getInstance().loadUsers(context);
 
     }
     public void switchToUser(View view){
